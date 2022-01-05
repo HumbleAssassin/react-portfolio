@@ -1,0 +1,28 @@
+.container {
+   position: relative;
+}
+
+.navbar-brand {
+   position: relative;
+   z-index: 1;
+   height: 100%;
+}
+
+.navbar-brand:after {
+   content: "";
+   background: #dc3545;
+   height: 100%;
+   width: 80%;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   z-index: -1;
+   border-radius: 50%;
+   transform: translateX(-50%) rotate(-10deg);
+   transition: 0.3s ease-in-out;
+}
+
+.navbar-brand:hover:after {
+   opacity: 0;
+   transform: translateX(-50%) rotate(-10deg) scale(0);
+}

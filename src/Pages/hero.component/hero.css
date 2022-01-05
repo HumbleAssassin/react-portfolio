@@ -1,0 +1,144 @@
+.hero {
+   background: radial-gradient(rgb(24, 24, 24), black);
+   margin-bottom: 100px;
+   position: relative;
+}
+
+.content {
+   padding: 35vh 0 20vh 0;
+}
+
+.intro {
+   position: relative;
+}
+
+.intro:after {
+   content: "";
+   width: calc(60% - 13rem);
+   height: 2px;
+   background: #dc3545;
+   position: absolute;
+   left: 218px;
+   bottom: 4px;
+}
+
+/* Image Positioning */
+
+.ninja {
+   margin: 0 0 -15% auto;
+   z-index: 999;
+}
+
+/* Side Social Icon Styling */
+
+.social-icons {
+   position: absolute;
+   right: 35px;
+   top: 25%;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.social-icons a,
+.social-icon a:active,
+.social-icons a:hover {
+   color: white;
+   position: relative;
+   text-align: right;
+}
+
+.social-icons:after {
+   position: absolute;
+   top: 0;
+   right: -25px;
+   content: "";
+   height: 100%;
+   width: 2px;
+   background: #dc3545;
+}
+
+.social-icons a .fab:after {
+   position: absolute;
+   top: 2px;
+   right: 20px;
+   font-size: 18px;
+   font-family: "marcellus sc";
+   word-break: keep-all;
+   transform: scale(0);
+   transform-origin: right;
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover .fab:after {
+   transform: scale(1);
+   opacity: 1;
+}
+
+.social-icons a .fab.fa-facebook-f:after {
+   content: "Facebook";
+}
+.social-icons a .fab.fa-free-code-camp:after {
+   content: "Free Code Camp";
+   white-space: pre;
+   right: 25px;
+}
+.social-icons a .fab.fa-github-alt:after {
+   content: "GitHub";
+}
+.social-icons a .fab.fa-google:after {
+   content: "Google";
+}
+.social-icons a .fab.fa-linkedin-in:after {
+   content: "Linkedin";
+}
+
+/* Social Icon Bottom Styling */
+
+.social-icons-bottom {
+   position: relative;
+   margin-left: 25px;
+   overflow: hidden;
+}
+
+.social-icons-bottom a {
+   transform: translateX(-900%) rotateY(-360deg);
+   animation: open 1s ease-in-out forwards;
+   transform-origin: left;
+}
+
+.social-icons-bottom a.facebook {
+   animation-delay: 500ms;
+}
+.social-icons-bottom a.free-code-camp {
+   animation-delay: 450ms;
+}
+.social-icons-bottom a.google {
+   animation-delay: 350ms;
+}
+.social-icons-bottom a.github {
+   animation-delay: 200ms;
+}
+
+@keyframes open {
+   100% {
+      transform: translateX(0) rotateY(0);
+   }
+}
+
+.social-icons-bottom:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0px;
+   height: 100%;
+   width: 2px;
+   background: red;
+}
+
+@media (max-width: 991px) {
+   .content {
+      padding: 15vh 0 5vh 0;
+   }
+}
