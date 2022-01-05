@@ -29,7 +29,7 @@ function Hero() {
                         utilityClasses="btn-danger rounded-pill me-4 fw-bold"
                      />
                      <Button
-                        label="Get CV"
+                        label="Download CV"
                         utilityClasses="btn-outline-light px-4 rounded-pill"
                      />
                   </div>
