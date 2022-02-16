@@ -6,6 +6,39 @@ import ninja from "../../assets/icon/ninja.png"
 
 import "./landing.css"
 
+const socialMediaLinks = [
+   {
+      id: 1,
+      name: "facebook",
+      icon: <FaFacebookF />,
+      url: "https://www.facebook.com/rajeev.thapa.73/",
+   },
+   {
+      id: 2,
+      name: "freecodecamp",
+      icon: <FaFreeCodeCamp />,
+      url: "https://forum.freecodecamp.org/u/humbleassassin/summary",
+   },
+   {
+      id: 3,
+      name: "google",
+      icon: <FaGoogle />,
+      url: "mailto:thaparajeev1985@gmail.com",
+   },
+   {
+      id: 4,
+      name: "github",
+      icon: <FaGithub />,
+      url: "https://github.com/HumbleAssassin",
+   },
+   {
+      id: 5,
+      name: "linkedin",
+      icon: <FaLinkedinIn />,
+      url: "https://www.linkedin.com/in/rajeev-thapa-b1b5941b3/",
+   },
+]
+
 function Hero() {
    return (
       <div className="hero">
@@ -20,9 +53,9 @@ function Hero() {
                      thing. It always waits calmly there and does what it is supposed to do. BE LIKE
                      A CODE.
                   </p>
-                  <div className="pt-4">
-                     <Link to="hireme" className="btn btn-danger rounded-pill me-4 fw-bold">
-                        Hello World
+                  <div className="my-3">
+                     <Link to="hireme" className="btn btn-danger rounded-pill px-4 me-4 fw-bold ">
+                        Hire Me
                      </Link>
                      <a
                         href="https://drive.google.com/file/d/1c6SIBJALsMgaCpfcYT1jinaqg5clFQdJ/view?usp=sharing"
@@ -37,41 +70,16 @@ function Hero() {
                   <img src={ninja} alt="" className="w-100 ninja d-none d-md-block" />
                </div>
                <div className="social-icons-bottom d-lg-none d-flex gap-3 mb-5 justify-content-start w-75">
-                  <a
-                     href="https://www.facebook.com/rajeev.thapa.73/"
-                     rel="noreferrer"
-                     target="_blank"
-                     className="social-link facebook text-white">
-                     <FaFacebookF />
-                  </a>
-                  <a
-                     href="https://forum.freecodecamp.org/u/humbleassassin/summary"
-                     target="_blank"
-                     rel="noreferrer"
-                     className="social-link free-code-camp text-white">
-                     <FaFreeCodeCamp />
-                  </a>
-                  <a
-                     href="mailto:thaparajeev1985@gmail.com"
-                     target="_blank"
-                     rel="noreferrer"
-                     className="social-link google text-white">
-                     <FaGoogle />
-                  </a>
-                  <a
-                     href="https://github.com/HumbleAssassin"
-                     rel="noreferrer"
-                     target="_blank"
-                     className="social-link github text-white">
-                     <FaGithub />
-                  </a>
-                  <a
-                     href="https://www.linkedin.com/in/rajeev-thapa-b1b5941b3/"
-                     rel="noreferrer"
-                     target="_blank"
-                     className="social-link linkedin text-white">
-                     <FaLinkedinIn />
-                  </a>
+                  {socialMediaLinks.map((link) => (
+                     <a
+                        key={link.id}
+                        href={link.url}
+                        rel="noreferrer"
+                        target="_blank"
+                        className={`social-link ${link.name} text-white`}>
+                        {link.icon}
+                     </a>
+                  ))}
                </div>
             </div>
             <div className="social-icons d-none d-lg-flex">

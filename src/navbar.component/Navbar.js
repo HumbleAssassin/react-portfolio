@@ -1,8 +1,31 @@
 import React from "react"
+
 import { NavLink } from "react-router-dom"
-import { FaHome, FaInfo, FaBriefcase, FaEnvelopeOpenText } from "react-icons/fa"
 import "./navbar.css"
 import Logo from "../common/logo/Logo"
+
+const navLinks = [
+   {
+      id: 1,
+      url: "/",
+      name: "Home",
+   },
+   {
+      id: 2,
+      url: "about-me",
+      name: "About Me",
+   },
+   {
+      id: 3,
+      url: "portfolio",
+      name: "Portfolio",
+   },
+   {
+      id: 4,
+      url: "contact",
+      name: "Contact",
+   },
+]
 
 function Navbar() {
    return (
@@ -18,27 +41,14 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-0 me-lg-0 text-end">
-                  <li className="nav-item ms-3">
-                     <NavLink to="/" className="nav-link">
-                        Home <FaHome />
-                     </NavLink>
-                  </li>
-                  <li className="nav-item ms-3">
-                     <NavLink to="/about-me" className="nav-link">
-                        About Me <FaInfo />
-                     </NavLink>
-                  </li>
-                  <li className="nav-item ms-3">
-                     <NavLink to="/portfolio" className="nav-link">
-                        Portfolio <FaBriefcase />
-                     </NavLink>
-                  </li>
-                  <li className="nav-item ms-3">
-                     <NavLink to="/contact" className="nav-link">
-                        Contact <FaEnvelopeOpenText />
-                     </NavLink>
-                  </li>
-                  <li className="nav-item ms-lg-5">
+                  {navLinks.map((link) => (
+                     <li className="nav-item ms-3" key={link.id}>
+                        <NavLink to={link.url} className="nav-link">
+                           {link.name}
+                        </NavLink>
+                     </li>
+                  ))}
+                  <li className="nav-item ms-lg-5 mt-4">
                      <NavLink to="/hireme" className="btn btn-danger ">
                         Hire Me
                      </NavLink>
