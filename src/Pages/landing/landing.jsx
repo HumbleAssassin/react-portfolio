@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { FaFacebookF, FaFreeCodeCamp, FaGithub, FaGoogle } from "react-icons/fa"
+import { FaFacebookF, FaFreeCodeCamp, FaGithub, FaGoogle, FaLinkedinIn } from "react-icons/fa"
 
 import ninja from "../../assets/icon/ninja.png"
 
@@ -37,7 +37,11 @@ function Hero() {
                   <img src={ninja} alt="" className="w-100 ninja d-none d-md-block" />
                </div>
                <div className="social-icons-bottom d-lg-none d-flex gap-3 mb-5 justify-content-start w-75">
-                  <a href="facebook" target="_blank" className="social-link facebook text-white">
+                  <a
+                     href="https://www.facebook.com/rajeev.thapa.73/"
+                     rel="noreferrer"
+                     target="_blank"
+                     className="social-link facebook text-white">
                      <FaFacebookF />
                   </a>
                   <a
@@ -45,10 +49,10 @@ function Hero() {
                      target="_blank"
                      rel="noreferrer"
                      className="social-link free-code-camp text-white">
-                     <i className="fab fa-free-code-camp"></i>
+                     <FaFreeCodeCamp />
                   </a>
                   <a
-                     href="https://www.facebook.com/rajeev.thapa.73/"
+                     href="mailto:thaparajeev1985@gmail.com"
                      target="_blank"
                      rel="noreferrer"
                      className="social-link google text-white">
@@ -59,14 +63,14 @@ function Hero() {
                      rel="noreferrer"
                      target="_blank"
                      className="social-link github text-white">
-                     <i className="fab fa-github-alt"></i>
+                     <FaGithub />
                   </a>
                   <a
                      href="https://www.linkedin.com/in/rajeev-thapa-b1b5941b3/"
                      rel="noreferrer"
                      target="_blank"
                      className="social-link linkedin text-white">
-                     <i className="fab fa-linkedin-in"></i>
+                     <FaLinkedinIn />
                   </a>
                </div>
             </div>
@@ -79,7 +83,7 @@ function Hero() {
                   target="_blank"
                   rel="noreferrer"
                   className="social-link free-code-camp text-white">
-                  <i className="fab fa-free-code-camp"></i>
+                  <FaFreeCodeCamp />
                </a>
                <a
                   href="https://www.facebook.com/rajeev.thapa.73/"
