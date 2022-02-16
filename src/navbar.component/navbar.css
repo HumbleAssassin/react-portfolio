@@ -26,3 +26,7 @@
    opacity: 0;
    transform: translateX(-50%) rotate(-10deg) scale(0);
 }
+
+.navbar-collapse {
+   transition: 0.2s linear !important;
+}

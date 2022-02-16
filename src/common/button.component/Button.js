@@ -1,9 +1,11 @@
 import React from "react"
 
-function Button(props) {
+function Button({ BSClass, label, children }) {
    return (
       <>
-         <button className={`btn px-4 ${props.utilityClasses}`}>{props.label}</button>
+         <button className={`btn px-4 ${BSClass}`}>
+            {label} {children}
+         </button>
       </>
    )
 }
