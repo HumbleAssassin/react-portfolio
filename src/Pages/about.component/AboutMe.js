@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { FaQuestion } from "react-icons/fa"
 import "./aboutme.css"
 import profile from "../../assets/images/Profile-BG-Removed.png"
 
