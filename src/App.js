@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact"
 import PageNotFound from "./Pages/PageNotFound/PageNotFound"
 import "./App.css"
 import HireMe from "./Pages/hireMe.component/HireMe"
+import Footer from "./common/footer/Footer"
 
 function App() {
    return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="hireme" element={<HireMe />}></Route>
             <Route path="*" element={<PageNotFound />}></Route>
          </Routes>
+         <Footer />
       </>
    )
 }

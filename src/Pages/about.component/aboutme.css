@@ -1,0 +1,43 @@
+.aboutMe {
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
+}
+
+.aboutMe-title {
+   background: #dc3545;
+   height: 70px;
+   width: 190px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   position: relative;
+}
+
+.aboutMe-title:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 100%;
+   border: 35px solid #dc3545;
+   border-top-color: transparent;
+   border-right-color: transparent;
+}
+
+.aboutMe-image {
+   max-width: 500px !important;
+   shape-outside: url(../../assets/images/Profile-BG-Removed.png);
+   margin-left: 20px;
+   shape-margin: 20px;
+}
+
+.btn-group .btn.aboutMe-btn {
+   border-radius: 0;
+   border: 4px solid #201b1b;
+   border-left: none;
+   border-top-width: 2px;
+}
+
+.aboutMe-subheading {
+   font-family: cursive;
+   margin-top: 5px;
+}

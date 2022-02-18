@@ -1,6 +1,7 @@
 .hero {
    background: radial-gradient(rgb(24, 24, 24), black);
    position: relative;
+   min-height: 90vh;
 }
 
 .content {
@@ -102,7 +103,7 @@
 }
 
 .social-icons-bottom a {
-   transform: translateX(-600%) rotateY(-360deg);
+   transform: translateX(-900%) rotateY(-360deg);
    animation: open 1s ease-in-out forwards;
    transform-origin: left;
 }

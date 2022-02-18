@@ -48,7 +48,7 @@ function Navbar() {
                         </NavLink>
                      </li>
                   ))}
-                  <li className="nav-item ms-lg-5 mt-4">
+                  <li className="nav-item ms-lg-5 mt-4 mt-lg-0">
                      <NavLink to="/hireme" className="btn btn-danger ">
                         Hire Me
                      </NavLink>
