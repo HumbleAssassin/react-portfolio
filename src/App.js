@@ -12,7 +12,8 @@ import Footer from "./common/footer/Footer"
 function App() {
    return (
       <>
-         <Navbar></Navbar>
+         <Navbar BSClass="sticky-top"></Navbar>
+
          <Routes>
             <Route path="/" element={<Hero />}></Route>
             <Route path="about-me" element={<AboutMe />}></Route>

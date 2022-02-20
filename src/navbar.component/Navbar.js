@@ -16,20 +16,15 @@ const navLinks = [
       name: "About Me",
    },
    {
-      id: 3,
-      url: "portfolio",
-      name: "Portfolio",
-   },
-   {
       id: 4,
       url: "contact",
       name: "Contact",
    },
 ]
 
-function Navbar() {
+function Navbar({ BSClass }) {
    return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark font-marcellus py-3">
+      <nav className={`${BSClass} navbar navbar-expand-lg navbar-dark bg-dark font-marcellus py-3`}>
          <div className="container">
             <Logo BSClass="navbar-brand" />
             <button
@@ -48,11 +43,6 @@ function Navbar() {
                         </NavLink>
                      </li>
                   ))}
-                  <li className="nav-item ms-lg-5 mt-4 mt-lg-0">
-                     <NavLink to="/hireme" className="btn btn-danger ">
-                        Hire Me
-                     </NavLink>
-                  </li>
                </ul>
             </div>
          </div>

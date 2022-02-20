@@ -1,7 +1,6 @@
 .hero {
    background: radial-gradient(rgb(24, 24, 24), black);
-   position: relative;
-   min-height: 90vh;
+   min-height: 80vh;
 }
 
 .content {
@@ -58,7 +57,7 @@
    background: #dc3545;
 }
 
-.social-icons a .fab:after {
+.social-icons a:after {
    position: absolute;
    top: 2px;
    right: 20px;
@@ -71,26 +70,26 @@
    transition: all 0.2s ease-in-out;
 }
 
-.social-icons a:hover .fab:after {
+.social-icons a:hover:after {
    transform: scale(1);
    opacity: 1;
 }
 
-.social-icons a .fab.fa-facebook-f:after {
+.social-icons a.facebook:after {
    content: "Facebook";
 }
-.social-icons a .fab.fa-free-code-camp:after {
+.social-icons a.freecodecamp:after {
    content: "Free Code Camp";
    white-space: pre;
    right: 25px;
 }
-.social-icons a .fab.fa-github-alt:after {
+.social-icons a.github:after {
    content: "GitHub";
 }
-.social-icons a .fab.fa-google:after {
+.social-icons a.google:after {
    content: "Google";
 }
-.social-icons a .fab.fa-linkedin-in:after {
+.social-icons a.linkedin:after {
    content: "Linkedin";
 }
 

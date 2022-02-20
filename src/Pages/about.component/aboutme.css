@@ -24,10 +24,10 @@
 }
 
 .aboutMe-image {
-   max-width: 500px !important;
+   max-width: 700px !important;
    shape-outside: url(../../assets/images/Profile-BG-Removed.png);
-   margin-left: 20px;
-   shape-margin: 20px;
+   margin-right: 25px;
+   shape-margin: 25px;
 }
 
 .btn-group .btn.aboutMe-btn {
@@ -37,7 +37,31 @@
    border-top-width: 2px;
 }
 
-.aboutMe-subheading {
+.aboutMe-content-text {
+   color: white;
+}
+
+.aboutMe-content-subheading {
    font-family: cursive;
    margin-top: 5px;
+}
+
+.aboutMe-content .card {
+   width: 90px;
+   min-width: fit-content;
+   text-align: center;
+}
+
+.card-body {
+   perspective: 80px;
+}
+
+.card .card-title {
+   transition: all 1s ease-in-out;
+}
+
+.card:hover .card-title {
+   transform: rotateY(360deg);
+   transform-origin: center;
+   /* transform-style: preserve-3d; */
 }
