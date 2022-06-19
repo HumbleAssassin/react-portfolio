@@ -45,7 +45,7 @@ function Hero() {
       <main>
          <div className="hero">
             <div className="container">
-               <div className="row align-items-end">
+               <div className="row px-3 px-md-0 align-items-end">
                   <div className="col-md-8 content">
                      <p className="mb-0 text-light intro">Hi, My Name is Rajeev Thapa</p>
                      <h1 className="mb-4 text-white">I Design/ Code Awesome UIs</h1>
